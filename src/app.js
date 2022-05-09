@@ -1,10 +1,3 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 let fraseFinal = document.querySelector("#excuse");
 let random3;
 let random4;
@@ -12,7 +5,7 @@ let random5;
 
 const excusita = () => {
   let frase;
-  frase = `${who[random4]} ${action[random4]} ${what[random3]} ${when[random5]}`;
+  frase = `${who[random3]} ${action[random3]} ${what[random2]} ${when[random4]}`;
   console.log(frase);
   fraseFinal.innerHTML = frase;
 };
@@ -29,10 +22,11 @@ let when = [
 ];
 
 window.addEventListener("load", e => {
+  random2 = Math.floor(Math.random() * 3);
   random3 = Math.floor(Math.random() * 4);
-  random4 = Math.floor(Math.random() * 5);
-  random5 = Math.floor(Math.random() * 6);
-  console.log(random3, random4, random5);
+  random4 = Math.floor(Math.random() * 6);
+
+  console.log(random2, random3, random4);
   excusita();
   return random3, random4, random5;
 });
