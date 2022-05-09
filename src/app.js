@@ -29,18 +29,9 @@ let when = [
 ];
 
 window.addEventListener("load", e => {
-  random3 = Math.floor(Math.random() * 2 + 1);
-  random4 = Math.floor(Math.random() * 3 + 1);
-  random5 = Math.floor(Math.random() * 4 + 1);
-  if (random3 <= 1.5) {
-    random3 = 0;
-  }
-  if (random4 <= 1.5) {
-    random4 = 0;
-  }
-  if (random5 <= 1.5) {
-    random5 = 0;
-  }
+  random3 = Math.floor(Math.random() * 4);
+  random4 = Math.floor(Math.random() * 5);
+  random5 = Math.floor(Math.random() * 6);
   console.log(random3, random4, random5);
   excusita();
   return random3, random4, random5;
