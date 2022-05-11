@@ -6,7 +6,6 @@ let random5;
 const excusita = () => {
   let frase;
   frase = `${who[random4]} ${action[random4]} ${what[random3]} ${when[random5]}`;
-  console.log(frase);
   fraseFinal.innerHTML = frase;
 };
 
@@ -25,6 +24,6 @@ window.addEventListener("load", e => {
   random3 = Math.floor(Math.random() * 3);
   random4 = Math.floor(Math.random() * 4);
   random5 = Math.floor(Math.random() * 5);
-  console.log(random2, random3, random5);
+
   excusita();
 });
